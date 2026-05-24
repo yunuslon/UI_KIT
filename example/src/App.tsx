@@ -1,13 +1,20 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'ui_kit';
-
-const result = multiply(3, 7);
+import { View, StyleSheet } from 'react-native';
+import { AppThemeProvider, Box } from 'ui_kit';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <AppThemeProvider>
+      <View style={styles.container}>
+        <Box
+          width={160}
+          height={160}
+          backgroundColor="background/solid/bg-brand"
+          borderRadius="radii-full"
+          borderColor="background/solid/bg-danger"
+          borderWidth="border-large"
+        />
+      </View>
+    </AppThemeProvider>
   );
 }
 

@@ -163,5 +163,9 @@
       "vite"
     ],
     "version": "0.62.0"
+  },
+  "dependencies": {
+    "@shopify/restyle": "^2.4.5",
+    "react-native-size-matters": "^0.4.2"
   }
 }

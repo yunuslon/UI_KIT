@@ -1,1 +1,3 @@
-export { multiply } from './multiply';
+export * from './components';
+export * from './theme';
+export * from './providers/AppThemeProvider';

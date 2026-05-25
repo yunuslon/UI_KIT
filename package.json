@@ -1,6 +1,7 @@
 {
   "name": "ui_kit",
   "version": "0.1.0",
+  "private": true,
   "description": "Package UI for MIFX",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",

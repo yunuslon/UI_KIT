@@ -1,18 +1,11 @@
-import { View, StyleSheet } from 'react-native';
-import { AppThemeProvider, Box } from 'ui_kit';
+import { StyleSheet, View } from 'react-native';
+import { AppThemeProvider, Button } from 'ui_kit';
 
 export default function App() {
   return (
     <AppThemeProvider>
       <View style={styles.container}>
-        <Box
-          width={160}
-          height={160}
-          backgroundColor="background/solid/bg-brand"
-          borderRadius="radii-full"
-          borderColor="background/solid/bg-danger"
-          borderWidth="border-large"
-        />
+        <Button label="Submit" size="sm" state="disabled" />
       </View>
     </AppThemeProvider>
   );
@@ -21,7 +14,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: 'red',
+    paddingHorizontal: 20,
   },
 });
